@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html {
+      font-family: 'Raleway', sans-serif;
+    }
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .form {
+      background-color: rgb(231, 231, 231);
+      border: 2px solid #ccc;
+      padding: 20px;
+    }
+    .form-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .form, .result {
+      width: 100%;
+    }
+    .result {
+      margin: 20px 0;
+    }
+    .content textarea {
+      width: 100%;
+      border: 2px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Comments remover v1.0</h1>
+    <form class="form">
+      <div class="form-row">
+        <input type="file" id="fileInput"/>
+        <button type="submit" id="submitFile">Test</button>
+      </div>
+    </form>
+    <div class="result">
+      <textarea rows="20" id="resultBox"></textarea>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
